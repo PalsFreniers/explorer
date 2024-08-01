@@ -128,17 +128,17 @@ struct Cell {
 const int BOLD = 0x0100;
 const int UNDERLINE = 0x0200;
 const int REVERSE = 0x0400;
-const int DEFAULT = 0x00;
-const int BLACK   = 0x01;
-const int RED     = 0x02;
-const int GREEN   = 0x03;
-const int YELLOW  = 0x04;
-const int BLUE    = 0x05;
-const int MAGENTA = 0x06;
-const int CYAN    = 0x07;
-const int WHITE   = 0x08;
 const int HIDE_CURSOR = -1;
 const int EOF = -1;
+const ushort DEFAULT = 0x00;
+const ushort BLACK   = 0x01;
+const ushort RED     = 0x02;
+const ushort GREEN   = 0x03;
+const ushort YELLOW  = 0x04;
+const ushort BLUE    = 0x05;
+const ushort MAGENTA = 0x06;
+const ushort CYAN    = 0x07;
+const ushort WHITE   = 0x08;
 
 extern fn int init() @extern("tb_init");
 extern fn int initFile(char* file) @extern("tb_init_file");
